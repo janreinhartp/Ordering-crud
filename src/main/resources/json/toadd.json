@@ -1,0 +1,22 @@
+{
+  "order": {
+    "custName": "Reinhart",
+    "orders": [
+        {
+            "item": "Coffee",
+            "qty":2,
+            "price": 120
+        },
+        {
+            "item": "Iced Caramel Machiato",
+            "qty":2,
+            "price": 200
+        },
+        {
+            "item": "Ice Latte",
+            "qty":2,
+            "price": 150
+        }
+    ]
+  }
+}

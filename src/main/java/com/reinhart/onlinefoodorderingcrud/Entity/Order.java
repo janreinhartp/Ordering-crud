@@ -5,6 +5,7 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -30,8 +31,7 @@ public class Order {
 	@Column
 	private String CustName;
 
-	@OneToMany(targetEntity = Orders.class, cascade = CascadeType.ALL)
+	@OneToMany(targetEntity = Orders.class, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinColumn(name = "order_fk", referencedColumnName = "OrderID")
 	private List<Orders> orders;
-
 }
